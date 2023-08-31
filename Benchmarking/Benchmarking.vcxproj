@@ -139,7 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Time_Benchmarking\benchmark.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="misc_func.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Time_Benchmarking\benchmark.hpp" />
+    <ClInclude Include="misc_func.hpp" />
+    <ClInclude Include="sorting_mechanisms.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
