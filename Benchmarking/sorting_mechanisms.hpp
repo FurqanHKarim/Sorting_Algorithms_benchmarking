@@ -37,8 +37,15 @@ public:
 
 	}
 
+	uint64_t return_size()
+	{
+		return this->size_of_array;
+	}
 
-
+	uint64_t return_range()
+	{
+		return this->range_of_array;
+	}
 
 	T* bubble_sort()
 	{
@@ -127,6 +134,7 @@ public:
 		return temp;
 
 	}
+
 	T* histoSort()
 	{
 		vector<T> histogram;
@@ -155,7 +163,18 @@ public:
 		return temp;
 	}
 
+	void best_case_gen()
+	{
+		T* _deleter = arr_;
+		arr_ = sortSTD();
+		delete _deleter;
 
+	}
+
+	void worst_case_gen()
+	{
+		sort(arr_ , arr_ + size_of_array,greater<int>());
+	}
 };
 
 
