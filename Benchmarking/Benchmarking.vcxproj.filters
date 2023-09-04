@@ -21,15 +21,9 @@
     <ClCompile Include="..\Time_Benchmarking\benchmark.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="misc_func.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Time_Benchmarking\benchmark.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="misc_func.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="sorting_mechanisms.hpp">

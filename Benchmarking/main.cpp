@@ -63,13 +63,13 @@ int main() {
 		random[i].csv_out("results_for_random");
 		random[i].display_result("ns");
 
-		/*best_cases[i].test_all();
+		best_cases[i].test_all();
 		best_cases[i].csv_out("results_for_best_cases");
 		best_cases[i].display_result("ns");
 
 		worst_cases[i].test_all();
 		worst_cases[i].csv_out("results_for_worst_cases");
-		worst_cases[i].display_result("ns");*/
+		worst_cases[i].display_result("ns");
 
 	}
 	//random[0].csv_out();
