@@ -72,7 +72,68 @@ public:
 
 		return temp;
 	}
+	T* recursion_wrapper()
+	{
+		T* temp = new T[size_of_array];
+		memcpy(temp, arr_, size_of_array * sizeof(T));
+		selection_sort_recur(temp,size_of_array);
+		return temp;
+	}
 
+	void bubble_sort_recur(T* ary,int size) 
+	{
+		if (size == 0)
+			return;
+
+		for (uint64_t i = 0; i < size - 1; i++)
+		{
+			if (ary[i] > ary[i + 1])
+				swap(ary[i], ary[i + 1]);
+		}
+
+		bubble_sort(ary, size - 1);
+
+	}
+	void insertion_sort_recur(T* ary, int size)
+	{
+		if (size == 1)
+			return;
+
+		insertion_sort(ary, size - 1);
+
+		int key = ary[size - 1];
+		int iterator = size - 2;
+
+		while (iterator >= 0 && ary[iterator] > key)
+		{
+			ary[iterator + 1] = ary[iterator];
+			iterator--;
+		}
+		ary[iterator + 1] = key;
+
+	}
+	void selection_sort_recur(T* ary, int size)
+	{
+		if (size == 0)
+			return;
+		int iterator = 0;
+		int key = ary[0];
+
+		for (uint64_t i = 0; i < size; i++)
+		{
+			if (key > ary[i])
+			{
+				key = ary[i];
+				iterator = i;
+			}
+
+		}
+
+		swap(ary[iterator], ary[0]);
+		selection_sort_recur(ary + 1, size - 1);
+
+
+	}
 	T* insertion_sort()
 	{
 		T* temp = new T[size_of_array];

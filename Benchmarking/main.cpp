@@ -2,8 +2,9 @@
 #include"..\Time_Benchmarking\benchmark.hpp"
 #include"sorting_mechanisms.hpp"
 #include"ultra_sort_bench.hpp"
-
 using namespace std;
+
+
 bool check(int* array1, int* array2, int lenght)
 {
 	for (size_t i = 0; i < lenght; i++)
@@ -19,7 +20,7 @@ bool check(int* array1, int* array2, int lenght)
 	return 1;
 }
 
-int main() {
+int main1() {
 
 
 
@@ -54,8 +55,8 @@ int main() {
 		
 	}
 
-	
-	//cout << "Sup Jani" << endl;
+
+
 
 	for (uint64_t i = 0; i < random.size(); i++)
 	{
@@ -75,4 +76,14 @@ int main() {
 	//random[0].csv_out();
 	random[0].display_result("ns");
 
+	return 0;
+}
+
+int main()
+{
+	sorter<int> test(1000, 1000);
+	int* whaaat, * whyyyy;
+	whaaat = test.recursion_wrapper();
+	whyyyy = test.bubble_sort();
+	check(whaaat, whyyyy,test.return_size());
 }
