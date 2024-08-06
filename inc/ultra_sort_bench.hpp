@@ -1,7 +1,7 @@
 #ifndef ultra_sort
 #define ultra_sort
 #include"sorting_mechanisms.hpp"
-#include"..\Time_Benchmarking\benchmark.hpp"
+#include"benchmark.hpp"
 #include<fstream>
 
 

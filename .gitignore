@@ -35,3 +35,6 @@
 *.csv
 x64
 .vs
+
+
+build

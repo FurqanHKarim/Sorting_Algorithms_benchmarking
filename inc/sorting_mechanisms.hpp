@@ -1,11 +1,12 @@
 #ifndef surtur
 #define surtur
 
-#include<algorithm>
-#include<cstdlib>
-#include<array>
-#include<algorithm>
-#include<vector>
+#include <algorithm>
+#include <cstdint>
+#include <array>
+#include <vector>
+
+using namespace std;
 
 template<class T>
 class sorter{

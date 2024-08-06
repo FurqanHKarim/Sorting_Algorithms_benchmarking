@@ -1,6 +1,3 @@
 [submodule "Time_Benchmarking"]
 	path = Time_Benchmarking
 	url = https://github.com/FurqanHKarim/Time_Benchmarking.git
-[submodule "benchmark"]
-	path = benchmark
-	url = https://github.com/google/benchmark.git
